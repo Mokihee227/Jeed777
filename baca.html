@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="styles/main2.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap"
+			rel="stylesheet"
+    />
+		<link rel="icon" href="game.png" type="image/png">
+    
+		<script src="https://kit.fontawesome.com/b717b63455.js" crossorigin="anonymous"></script>
+    <script  src="scripts/app.js" type="module" type="text/javascript"></script>
+		<title>เข้าสู่ ไอ้จี๊ด777</title>
+	</head>
+
+	<body>
+	  <h1></h1>
+		<div id="container">
+			<div id="board-container">
+				<div id="board"></div>
+				<div id="stats">
+					<div style="color: #444">0</div>
+					<div style="color: var(--tie)">0</div>
+					<div style="color: var(--player)">0</div>
+					<div style="color: var(--banker)">0</div>
+				</div>
+			</div>
+
+			<div class="game-display">
+				<div class="hand player">
+					<div class="label">Player</div>
+					<div class="scene card-3">
+						<div class="card third-card">
+							<div class="card-face front"></div>
+							<div class="card-face back"></div>
+						</div>
+					</div>
+					<div class="gap"></div>
+					<div class="scene card-2">
+						<div class="card second-card">
+							<div class="card-face front"></div>
+							<div class="card-face back"></div>
+						</div>
+					</div>
+					<div class="scene card-1">
+						<div class="card first-card">
+							<div class="card-face front"></div>
+							<div class="card-face back"></div>
+						</div>
+					</div>
+				</div>
+        <div id="summary-container">
+	        <div id="summary" class="summary-out">
+					  <div id="score-display"></div>
+				  	<div id="score-msg"></div>
+				  </div>
+
+        </div>
+			
+
+				<div class="hand banker">
+					<div class="scene card-1">
+						<div class="card first-card">
+							<div class="card-face front"></div>
+							<div class="card-face back"></div>
+						</div>
+					</div>
+					<div class="scene card-2">
+						<div class="card second-card">
+							<div class="card-face front"></div>
+							<div class="card-face back"></div>
+						</div>
+					</div>
+					<div class="gap"></div>
+					<div class="scene card-3">
+						<div class="card third-card">
+							<div class="card-face front"></div>
+							<div class="card-face back"></div>
+						</div>
+					</div>
+					<div class="label">Banker</div>
+				</div>
+			</div>
+
+			<div id="controls">
+
+        
+				<div id="title-container">
+          Baccarat
+        </div>
+
+				<div id="bet-grid">
+					<div class="bet-label tie-font">เสมอ</div>
+					<div class="inside-bet">
+						<input class="bet-ani" type="number" placeholder="0" min="0" />
+					</div>
+					<div class="bet-label yellow-font"></div>
+
+					<div class="bet-label banker-font">เจ้ามือ</div>
+					<div class="inside-bet">
+						<input class="bet-ani" type="number" placeholder="0" min="0" />
+					</div>
+					<div class="bonus-bet">
+						<input class="bet-ani" type="number" placeholder="0" min="0" />
+					</div>
+
+					<div class="bet-label player-font">ผู้เล่น</div>
+					<div class="inside-bet">
+						<input class="bet-ani" type="number" placeholder="0" min="0" />
+					</div>
+					<div class="bonus-bet">
+						<input class="bet-ani" type="number" placeholder="0" min="0" />
+					</div>
+
+					<div id="buttons">
+						<i id="play-button" class="fas fa-play"></i>
+						<i id="skip-button" class="fas fa-fast-forward"></i>
+						<i id="help-button" class="fas fa-question"></i>
+					</div>
+				</div>
+
+        <div id="bankroll-container">
+          <span>
+            เงินของคุณ:
+    </span> <span>$<span id="bankroll"></span>บาท</span>
+        </div>
+			
+		</div>
+
+		<div id="modal-container" class="popup">
+			<div id="help-modal" class="popup">
+				<button id="reset-modal-button" class="modal-btn">รีเงิน</button>
+				<button id="shoe-modal-button" class="modal-btn">เริ่มห้องใหม่</button>
+			</div>
+			<div id="shuffle-modal" class="popup">
+				<div>แน่ใจนะ</div>
+				<button id="new-shoe-button" class="modal-btn">OK</button>
+			</div>
+			<div id="reset-modal" class="popup">
+				<div>แน่ใจนะ</div>
+				<button id="reset-button" class="modal-btn">OK</button>
+			</div>
+			<div id="invalid-modal" class="popup">
+				<div>Invalid Bet</div>
+				<button id="invalid-button" class="modal-btn">OK</button>
+			</div>
+		</div>
+
+		
+		
+	</body>
+</html>
