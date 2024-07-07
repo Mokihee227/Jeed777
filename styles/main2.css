@@ -1,0 +1,59 @@
+@import 'board.css';
+@import 'cards.css';
+@import 'modals.css';
+@import 'bets.css';
+@import 'interface.css';
+@import 'phone.css';
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--player: #3782be;
+	--banker: #bb3d20;
+	--tie: #47a344;
+	--borders: rgba(255, 255, 255, 0.3);
+	--yellow: #bdb03e;
+	--dark: rgba(0, 0, 0, 0.33);
+	--background-color: #323331;
+}
+#container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.player-font {
+	color: var(--player);
+}
+
+.banker-font {
+	color: var(--banker);
+}
+
+.tie-font {
+	color: var(--tie);
+}
+
+.yellow-font {
+	color: var(--yellow);
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: 'Montserrat', monospace;
+	--shadow: rgba(0, 0, 0, 0.6);
+	text-shadow: -1px -1px 0 var(--shadow), 1px -1px 0 var(--shadow), -1px 1px 0 var(--shadow),
+		1px 1px 0 var(--shadow);
+	z-index: 0;
+}
+
+.game-display {
+	width: 90vw;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
